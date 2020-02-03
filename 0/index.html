@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Images</title>
+</head>
+
+<body>
+    <!-- Method 1: DPR with CSS px -->
+    <img id="img-1" src="img/lightbox-04_500x500.jpg" srcset="img/DEBUG__lightbox-04_500x500.jpg 1x,
+    img/DEBUG__lightbox-04_1000x1000.jpg 2x,
+    img/DEBUG__lightbox-04_1500x1500.jpg 3x">
+
+    <!-- Method 2: Pixel Width with CSS % -->
+    <img id="img-2" src="img/lightbox-04_500x500.jpg" srcset="img/DEBUG__lightbox-04_500x500.jpg 500w,
+        img/DEBUG__lightbox-04_1000x1000.jpg 1000w,
+        img/DEBUG__lightbox-04_1500x1500.jpg 1500w">
+</body>
+
+</html>
