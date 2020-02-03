@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Images</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Method 1: DPR with CSS px -->
-    <img id="img-1" src="img/lightbox-04_500x500.jpg" srcset="img/DEBUG__lightbox-04_500x500.jpg 1x,
-    img/DEBUG__lightbox-04_1000x1000.jpg 2x,
-    img/DEBUG__lightbox-04_1500x1500.jpg 3x">
 
     <!-- Method 2: Pixel Width with CSS % -->
     <img id="img-2" src="img/lightbox-04_500x500.jpg" srcset="img/DEBUG__lightbox-04_500x500.jpg 500w,
         img/DEBUG__lightbox-04_1000x1000.jpg 1000w,
-        img/DEBUG__lightbox-04_1500x1500.jpg 1500w">
-
+        img/DEBUG__lightbox-04_1500x1500.jpg 1500w" sizes="(min-width: 600px) 50vw, 100vw">
+    <!-- Even more accurate: (min-width: 600px) calc(50vw-2em), 100vw" -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, suscipit reprehenderit. Vel amet maiores natus,
+        aperiam repellendus, voluptatem magnam dolore corporis neque inventore omnis accusantium cupiditate corrupti
+        fugit blanditiis quae distinctio incidunt at tempore sed nam esse necessitatibus. Consequuntur incidunt
+        molestiae odit deserunt qui maiores nemo fuga quos beatae deleniti.</p>
 </body>
 
 </html>
